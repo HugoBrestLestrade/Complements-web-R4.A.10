@@ -1,16 +1,16 @@
 .blue {
-    border: solid 2px blue;
+    border: solid 2px rgb(2, 115, 253);
 }
 
 .green {
-    border: solid 2px green;
+    border: solid 2px rgb(0, 255, 106);
 }
 
 .red {
-    border: solid 2px red;
+    border: solid 2px rgb(250, 33, 33);
 }
 .orange {
-    border: solid 2px orange;
+    border: solid 2px rgb(255, 199, 16);
 }
 
 .tabs {
