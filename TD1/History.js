@@ -6,19 +6,20 @@ export class History {
         this.O_tableaudedonne = O_tableaudedonne;
         this.O_element2 = O_element2;
         this.O_title = O_title;
+
+        this.O_cpt = 0;
     }
 
     makeHistory(){
-        let I_cpt = 0;
         this.O_element.textContent = "";
-        this.O_element.insertCell(0).textContent = this.A_tableau[I_cpt];
+        this.O_element.insertCell(0).textContent = this.A_tableau[this.O_cpt];
         this.O_element.insertCell(1).textContent = " °C";
         this.O_element.ariaLabel = "off";
 
-        let I_caseTableau = this.A_tableau[I_cpt];
-        I_cpt = ++I_cpt
-        if (I_cpt == this.A_tableau.length){
-            I_cpt = 0;
+        let I_caseTableau = this.A_tableau[this.O_cpt];
+        this.O_cpt = ++this.O_cpt
+        if (this.O_cpt == this.A_tableau.length){
+            this.O_cpt = 0;
         }
 
 

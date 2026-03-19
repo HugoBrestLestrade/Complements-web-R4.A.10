@@ -22,7 +22,7 @@ let O_title = document.getElementById("title");
 let O_tableaudedonne = document.getElementById("tableaudedonnee");
 
 let test = new History(O_element, A_tableau, O_tableaudedonne, O_element2, O_title);
-let intervalleDeChangement = setInterval(test.makeHistory(), 2000)
+let intervalleDeChangement = setInterval(() => test.makeHistory(), 2000);
 // Initialize tablist
 
   window.addEventListener('load', function () {
